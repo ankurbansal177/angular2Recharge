@@ -1,6 +1,7 @@
 # Assignment
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
+Project was build with node v10.1.0 (npm v5.6.0)
 
 ## Development server
 Run `npm install` to load all modules
