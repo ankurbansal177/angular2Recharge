@@ -1,0 +1,10 @@
+.credit-card-form input.ng-invalid{
+  box-shadow: 0 0 3px #CC0000; margin: 10px
+}
+.credit-card-form input {
+  display: block;
+}
+.credit-card-form input#cc-number{
+  width: 80%;
+}
+

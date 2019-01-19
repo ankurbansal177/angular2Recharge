@@ -1,0 +1,12 @@
+<div class="net_banking">
+  <div *ngIf="bankOptions.length > 0">
+    <select class="form-control" [(ngModel)]="selectedBank" (ngModelChange)="updateBank($event)">
+      <option value = null [selected] = "selectedBank == null">Select</option>
+      <option [ngValue]="bank" *ngFor="let bank of bankOptions">{{bank.name}}</option>
+    </select>
+  </div>
+  <div *ngIf="bankOptions.length == 0">
+    Net Banking not available at the moment;
+  </div>
+  <button (click)="postPayment()" type="button" class="btn btn-primary">Pay {{amount}}</button>
+</div>

@@ -1,0 +1,27 @@
+<div>
+  <div class="container recharge-container">
+    1. Enter Amount
+    <div class="recharge-options row">
+        <app-recharge-banner class="col-2"
+            *ngFor = 'let rechargeBanner of rechargeOptions'
+            [selectedBanner] = 'selectedPrice'
+            [bannerD] = 'rechargeBanner'
+            (toggleComplete)="onToggleRadio($event)"
+        ></app-recharge-banner>
+        <div class="col-2">
+          <div class="recharge-banner">
+            <div class="enter_amount">Enter Amount</div>
+            <div class = "custom_price">
+              <input [disabled] = "!customSelected" [(ngModel)]="customPrice" type="number" class="form-control" placeholder="Enter Amount">
+            </div>
+            <div class="input_price">
+              <input (click)="selectCustomPrice($event)"  type="radio" name = "selectedCard">
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="button_container">
+      <button (click)="submitForm()" type="button" class="btn btn-primary">Continue</button>
+    </div>
+  </div>
+</div>

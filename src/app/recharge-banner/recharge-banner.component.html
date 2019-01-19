@@ -1,0 +1,18 @@
+<div class="recharge-banner">
+  <div class="bonus_price">
+    <div>
+      Bonus
+    </div>
+    <div>
+      {{bannerD.bonusPrice}}
+    </div>
+  </div>
+  <div class="price">
+    <div>
+      {{bannerD.price}}
+    </div>
+  </div>
+  <div class="input_price">
+    <input [checked] = "selectedBanner == bannerD.price" (click)="onToggleComplete(bannerD)" [value]="bannerD.price" type="radio" name = "selectedCard">
+  </div>
+</div>
