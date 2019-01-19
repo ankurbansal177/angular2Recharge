@@ -10,12 +10,12 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app 
 
 ## Code Structure Explained
 Components:
-Recharge Selector: This has all recharge options which are linked with websocket and update once we update the price.csv file on server side.
-Recharge Banner: Recharge selector consists of multiple recharge banners. Recharge banner has price, bonus Price and checked property. An interface for Recharge banner was created.
-Payment: Payment component with 2 payment option credit card and netbanking was added.
-Credit Card Component: This has form for credit card nummber, expiry date and cvv with validation. ng2-cc-validator module has been used for this. Only actual credit card number will work here.
-Internet Banking: Banks will be fetched from server and payment will be validated on server with bank details and amount.
-Payment Successful: This contains message and button to add more cash.
+Recharge Selector: This has all recharge options which are linked with websocket and update once we update the price.csv file   on server side.  
+Recharge Banner: Recharge selector consists of multiple recharge banners. Recharge banner has price, bonus Price and checked   property. An interface for Recharge banner was created.  
+Payment: Payment component with 2 payment option credit card and netbanking was added.  
+Credit Card Component: This has form for credit card nummber, expiry date and cvv with validation. ng2-cc-validator module has   been used for this. Only actual credit card number will work here.  
+Internet Banking: Banks will be fetched from server and payment will be validated on server with bank details and amount.  
+Payment Successful: This contains message and button to add more cash.  
 
 
 ## Build
